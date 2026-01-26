@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+*.log
+*.sqlite3
+*.db
+*.ipynb_checkpoints/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+
+# Misc
+*.bak
+*.swp
+*.tmp
+~$*
+
+# Ignore virtual environments
+.venv/
+venv/
+ENV/
+
+tracker.txt
+task-doc.pdf
