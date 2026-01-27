@@ -45,5 +45,8 @@ ENV/
 venv/
 ENV/
 
+#Data files
+dataset/
+
 tracker.txt
 task-doc.pdf
