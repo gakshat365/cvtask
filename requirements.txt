@@ -1,2 +1,2 @@
-numpy 2.2.5
-matplotlib 3.10
+numpy
+matplotlib

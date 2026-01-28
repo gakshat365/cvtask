@@ -1,0 +1,95 @@
+﻿The Lazy Artist
+"The eye sees only what the mind is prepared to comprehend." — Henri Bergson
+
+
+Modern Convolutional Neural Networks (CNNs) are incredibly powerful, but they are also incredibly lazy. They will cheat whenever possible. If you train a model to classify "Wolves" vs "Dogs," and all your wolf pictures have snow in the background, the model might not learn what a wolf looks like. It may instead learn to detect snow.
+
+
+In this task, you are not just an engineer; you are a psychologist for neural networks. You will deliberately traumatize a model with a biased dataset, diagnose its "mental block" using interpretability tools, and then invent a cure to force it to learn properly.
+Task 0 - The Biased Canvas
+"Illusion is the first of all pleasures." — Voltaire
+
+
+We need a dataset that lies. Since downloading real "biased" datasets is heavy, you will synthetically generate one using MNIST (or Fashion-MNIST).
+
+
+You must write a script to create a Colored-MNIST dataset with a specific Spurious Correlation:
+
+
+1. The Signal (Digit): The standard MNIST digits (0-9).
+2. The Noise (Color): You will assign a specific color to specific digits, but not 100% of the time.
+
+
+The Rules of the Bias:
+
+
+* The "Easy" Set (Train):
+   * 95% of all 0s are rendered in Red.
+   * 95% of all 1s are rendered in Green.
+   * ... (Assign a dominant color to each digit).
+   * The remaining 5% are colored randomly (Counter-examples).
+* The "Hard" Set (Test):
+   * The correlation is inverted or randomized. 0s are never Red. 1s are never Green.
+
+
+The Twist: The background shouldn't just be a solid flat color (too easy). The color should be applied to the foreground stroke or a background texture.
+Task 1 - The Cheater 
+"All models are wrong, some are useful." — George Box
+
+
+Train a standard CNN (ResNet-18 or a simple 3-layer CNN) on your Easy (Train) set.
+
+
+1. Training: It should achieve extremely high accuracy (>95%) on the Easy Train set and the Easy Validation set. The model will think, "Oh, Red = 0. Easy."
+2. The Trap: Evaluate this model on the Hard (Test) set.
+3. The Result: The accuracy should plummet (likely < 20%).
+
+
+Analysis:
+
+
+* Show the Confusion Matrix.
+* Prove that the model is looking at color. Feed it a Red 1. Does it predict 0?
+Task 2- The Prober
+"All models are wrong, some are useful." — George Box
+Can you now see what the neurons in the trained CNN are seeing? Start with an optimizable image tensor and optimize it to maximize the raw activations / channelwise mean activation / neuron’s spatial activation mean etc. (your choice, feel free to explore and see what works best or gives the most interesting results) and try to see concretely what a neuron “sees”. 
+
+You can use OpenAI Microscope as a reference and simplify their procedure. You can explore a wide range of neurons and try to evaluate if they focus more on color, sub-parts of a digit or more. While you are at it, do take some time to explore polysemanticity of neurons. NOTE: This is a very open ended task, and there are no concrete metrics. Explore multiple neurons. 
+Task 3 - The Interrogation 
+"To see is to know."
+
+
+You know the model is cheating. Now you must prove it mathematically. You cannot use libraries like pytorch-gradcam. You must implement Grad-CAM (Gradient-weighted Class Activation Mapping) from scratch.
+
+
+* The Math: Hook into the final convolutional layer of your Task 1 model. Calculate the gradients of the target class score with respect to the feature maps.
+* The Visual: Overlay the Heatmap on the original image.
+* The "Aha!" Moment:
+   * Take a "biased" image (e.g., Red 0). Does the heatmap focus on the shape of the zero, or does it "smear" across the colored pixels?
+   * Take a "conflicting" image (e.g., Green 0). Where does the model look?
+
+
+Task 4 - The Intervention 
+"Constraint inspires creativity."
+
+
+Now, retrain the model to ignore the color and focus on the shape, without converting the image to grayscale and without changing the dataset (you still have the 95% bias).
+You must implement a custom training strategy. Get creative here, and implement at least 2 methods that you think might work out here. Start with a hypothesis about what feels intuitive and then see if they work out. Some methods you might want to consider are – adding a color penalty or saliency guides. 
+
+
+Evaluation: Your new model must achieve respectable accuracy (>70%) on the Hard Test Set (the one with swapped colors), despite being trained on the biased set.
+Task 5: The Invisible Cloak
+"Reality is merely an illusion, albeit a very persistent one." — Einstein
+
+
+Take your robust model from Task 3. Can you perform a Targeted Adversarial Attack?
+
+
+* Take an image of a 7.
+* Optimize a noise pattern (perturbation) such that the model predicts a 3 with >90% confidence.
+* The Twist: The perturbation must be invisible to the human eye (Constraint: Max pixel change epsilon < 0.05).
+* The Question: Is your "robust" model (which ignores color) harder to fool than your "lazy" model from Task 1? Quantify the difference in the required noise magnitude.
+Task 6: The Decomposition
+Try training a Sparse Autoencoders (SAEs)  to decompose the intermediate hidden states into an overcomplete representation and see if you are finding any meaningful features or decompositions. You may have to play around with some manual labelling. Explore! 
+
+Can you then make interventions by dialing up or down these intermediate features? Attempt this on the original model which learns color features instead of shapes, and try to see if color features are even present in the hidden states. This will again involve trial and error, and no concrete outcomes are expected. We are just interested to see what you discover.
