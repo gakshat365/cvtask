@@ -5,4 +5,8 @@ env/
 ENV/
 
 # Dataset files
-data/
+data*/
+
+# Files for my references
+cvtask.txt
+

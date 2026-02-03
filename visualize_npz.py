@@ -58,11 +58,8 @@ class DatasetVisualizer:
             img = self.images[img_idx]
             label = self.labels[img_idx]
             
-            # Display image (convert 3-channel grayscale to regular grayscale for display)
-            # Since all channels are the same, just take the first channel
-            img_gray = img[:, :, 0]
-            
-            self.axes[row, col].imshow(img_gray, cmap='gray', vmin=0, vmax=255)
+            # Display image in color (RGB)
+            self.axes[row, col].imshow(img)
             self.axes[row, col].set_title(f'Label: {label}', fontsize=10, pad=5)
             self.axes[row, col].axis('off')
         
