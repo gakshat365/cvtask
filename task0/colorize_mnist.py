@@ -6,16 +6,16 @@ import cv2
 
 # Dominant colors for each digit (0-9)
 DOMINANT_COLORS = {
-    0: np.array([0, 255, 0], dtype=np.uint8),    # Red
-    1: np.array([255, 0, 0], dtype=np.uint8),    # Green
-    2: np.array([0, 0, 255], dtype=np.uint8),    # Blue
-    3: np.array([75, 75, 0], dtype=np.uint8),    # Yellow
-    4: np.array([0, 75, 75], dtype=np.uint8),    # Cyan
-    5: np.array([75, 0, 75], dtype=np.uint8),    # Magenta
-    6: np.array([75, 75, 0], dtype=np.uint8),    # Orange
-    7: np.array([75, 0, 75], dtype=np.uint8),    # Purple
-    8: np.array([75, 75, 0], dtype=np.uint8),    # Pink
-    9: np.array([75, 75, 0], dtype=np.uint8)     # Brown
+    0: np.array([255, 0, 0], dtype=np.uint8),      # Red
+    1: np.array([0, 128, 0], dtype=np.uint8),      # Green
+    2: np.array([0, 0, 255], dtype=np.uint8),      # Blue
+    3: np.array([255, 255, 0], dtype=np.uint8),    # Yellow
+    4: np.array([0, 255, 255], dtype=np.uint8),    # Cyan
+    5: np.array([255, 20, 147], dtype=np.uint8),   # neon pink
+    6: np.array([255, 165, 0], dtype=np.uint8),    # Orange
+    7: np.array([75, 0, 130], dtype=np.uint8),     # indigo
+    8: np.array([255, 192, 203], dtype=np.uint8),  # light Pink
+    9: np.array([128, 128, 0], dtype=np.uint8)     # olive green
 }
 
 def get_random_color():
