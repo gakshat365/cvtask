@@ -29,13 +29,16 @@ REVERSED_COLORS = {
 }
 
 def colorize(img, label, use_dominant, noise_prob, noise_range,
-             stroke_prob, stroke_range, stroke_thick, reverse):
+             stroke_prob, stroke_range, stroke_thick, reverse, all_white):
     
     gray = img[:, :, 0]
     
     if use_dominant:
-        colors = REVERSED_COLORS if reverse else COLORS
-        color = colors[label]
+        if all_white:
+            color = np.array([255, 255, 255], dtype=np.uint8)
+        else:
+            colors = REVERSED_COLORS if reverse else COLORS
+            color = colors[label]
     else:
         color = np.random.randint(0, 256, 3, dtype=np.uint8)
     
@@ -63,7 +66,7 @@ def colorize(img, label, use_dominant, noise_prob, noise_range,
     return result
 
 def process_file(input_file, output_file, bias, noise_prob, noise_range,
-                stroke_prob, stroke_range, stroke_thick, progress, reverse):
+                stroke_prob, stroke_range, stroke_thick, progress, reverse, all_white):
     
     print(f"Processing {input_file.name}...")
     
@@ -78,7 +81,7 @@ def process_file(input_file, output_file, bias, noise_prob, noise_range,
         use_dominant = np.random.random() < bias
         colored[i] = colorize(images[i], labels[i], use_dominant,
                              noise_prob, noise_range, stroke_prob, 
-                             stroke_range, stroke_thick, reverse)
+                             stroke_range, stroke_thick, reverse, all_white)
         
         if (i + 1) % progress == 0:
             print(f"  {i + 1}/{total} done")
@@ -89,6 +92,7 @@ def process_file(input_file, output_file, bias, noise_prob, noise_range,
 def main():
     # Config
     SAVE_METADATA = True             # Generate metadata file
+    ALL_WHITE = False               # If True, all dominant colors become white
     REVERSE = False
     BIAS = 0.95
     NOISE_PROB = 0.7
@@ -122,12 +126,18 @@ def main():
             f.write("=" * 50 + "\n\n")
             
             f.write("COLOR MAPPING:\n")
-            f.write(f"  Mode: {'REVERSED' if REVERSE else 'NORMAL'}\n\n")
-            for digit in range(10):
-                rgb = tuple(colors[digit])
-                f.write(f"  Digit {digit}: RGB{rgb}\n")
+            if ALL_WHITE:
+                f.write(f"  Mode: ALL WHITE (dominant colors overridden)\n\n")
+                for digit in range(10):
+                    f.write(f"  Digit {digit}: RGB(255, 255, 255)\n")
+            else:
+                f.write(f"  Mode: {'REVERSED' if REVERSE else 'NORMAL'}\n\n")
+                for digit in range(10):
+                    rgb = tuple(colors[digit])
+                    f.write(f"  Digit {digit}: RGB{rgb}\n")
             
             f.write("\nPARAMETERS:\n")
+            f.write(f"  ALL_WHITE: {ALL_WHITE}\n")
             f.write(f"  REVERSE: {REVERSE}\n")
             f.write(f"  BIAS: {BIAS}\n")
             f.write(f"  NOISE_PROB: {NOISE_PROB}\n")
@@ -142,7 +152,7 @@ def main():
     for f in files:
         out = output_dir / f"{f.stem}{suffix}{f.suffix}" if suffix else output_dir / f.name
         process_file(f, out, BIAS, NOISE_PROB, NOISE_RANGE, 
-                    STROKE_PROB, STROKE_RANGE, STROKE_THICK, PROGRESS, REVERSE)
+                    STROKE_PROB, STROKE_RANGE, STROKE_THICK, PROGRESS, REVERSE, ALL_WHITE)
         print()
     
     print("Done!")

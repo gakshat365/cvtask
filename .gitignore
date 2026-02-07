@@ -1,12 +1,16 @@
 # Virtual Environment
-.venv/
+.venv
 venv/
 env/
 ENV/
 
 # Dataset files
-data*/
+mydata/
+mydatav2/
 
 # Files for my references
 cvtask.txt
+
+training/
+
 
