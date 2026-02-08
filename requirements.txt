@@ -1,8 +1,0 @@
-numpy
-matplotlib
-opencv-python
-torch
-scikit-learn
-torchvision
-ipykernel
-torch-directml
