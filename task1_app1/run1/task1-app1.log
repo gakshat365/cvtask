@@ -1,0 +1,129 @@
+[{"stream_name":"stderr","time":7.449915576,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.449987117,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.449992438,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.449995116,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.033585327,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.033620415,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.033626509,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.033630884,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":15.353392656,"data":"PyTorch version: 2.8.0+cu126\n"}
+,{"stream_name":"stdout","time":15.353464919,"data":"CUDA available: True\n"}
+,{"stream_name":"stdout","time":15.353473028,"data":"Using device: cuda\n"}
+,{"stream_name":"stdout","time":16.309530939,"data":"rg95z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":16.309581157,"data":"gr95z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":16.804694739,"data":"gr95e shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.029453626,"data":"gr95m shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.278940674,"data":"gr95h shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.487623083,"data":"gr95vh shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.699671193,"data":"bw95z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.915346609,"data":"bw100z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.915402952,"data":"\n"}
+,{"stream_name":"stdout","time":17.915411624,"data":"Training data shape: (60000, 28, 28, 3)\n"}
+,{"stream_name":"stdout","time":17.915418478,"data":"Training labels shape: (60000,)\n"}
+,{"stream_name":"stdout","time":17.915426117,"data":"Number of classes: 10\n"}
+,{"stream_name":"stdout","time":18.59987911,"data":"Training set: torch.Size([54000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599917526,"data":"Validation set: torch.Size([6000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.59992252,"data":"Test set rg95z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599926724,"data":"Test set gr95z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599930938,"data":"Test set gr95e: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599934908,"data":"Test set gr95m: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599939064,"data":"Test set gr95h: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599942983,"data":"Test set gr95vh: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599947041,"data":"Test set bw95z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599951025,"data":"Test set bw100z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.599955136,"data":"Input shape: torch.Size([3, 28, 28])\n"}
+,{"stream_name":"stdout","time":18.894143447,"data":"CNN3Layer(\n"}
+,{"stream_name":"stdout","time":18.894200557,"data":"  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n"}
+,{"stream_name":"stdout","time":18.894206722,"data":"  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n"}
+,{"stream_name":"stdout","time":18.894211451,"data":"  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n"}
+,{"stream_name":"stdout","time":18.894215502,"data":"  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n"}
+,{"stream_name":"stdout","time":18.894220172,"data":"  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n"}
+,{"stream_name":"stdout","time":18.894224273,"data":"  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n"}
+,{"stream_name":"stdout","time":18.894227891,"data":"  (fc1): Linear(in_features=576, out_features=128, bias=True)\n"}
+,{"stream_name":"stdout","time":18.894231293,"data":"  (dropout): Dropout(p=0.01, inplace=False)\n"}
+,{"stream_name":"stdout","time":18.894235007,"data":"  (fc2): Linear(in_features=128, out_features=10, bias=True)\n"}
+,{"stream_name":"stdout","time":18.894238855,"data":")\n"}
+,{"stream_name":"stdout","time":18.894242282,"data":"\n"}
+,{"stream_name":"stdout","time":18.894245218000002,"data":"Total parameters: 131,466\n"}
+,{"stream_name":"stdout","time":23.453440458,"data":"Model compiled successfully!\n"}
+,{"stream_name":"stdout","time":23.45348183,"data":"Optimizer: Adam\n"}
+,{"stream_name":"stdout","time":23.453489256,"data":"Loss function: CrossEntropyLoss\n"}
+,{"stream_name":"stdout","time":26.989441177,"data":"Epoch [1/10] - Train Loss: 0.2572, Train Acc: 0.9316 - Val Loss: 0.0682, Val Acc: 0.9810\n"}
+,{"stream_name":"stdout","time":29.261744934,"data":"Epoch [2/10] - Train Loss: 0.0530, Train Acc: 0.9845 - Val Loss: 0.0384, Val Acc: 0.9885\n"}
+,{"stream_name":"stdout","time":31.576217871,"data":"Epoch [3/10] - Train Loss: 0.0340, Train Acc: 0.9902 - Val Loss: 0.0256, Val Acc: 0.9915\n"}
+,{"stream_name":"stdout","time":33.880660946,"data":"Epoch [4/10] - Train Loss: 0.0264, Train Acc: 0.9923 - Val Loss: 0.0261, Val Acc: 0.9925\n"}
+,{"stream_name":"stdout","time":36.156678453,"data":"Epoch [5/10] - Train Loss: 0.0188, Train Acc: 0.9944 - Val Loss: 0.0186, Val Acc: 0.9945\n"}
+,{"stream_name":"stdout","time":38.442267041,"data":"Epoch [6/10] - Train Loss: 0.0155, Train Acc: 0.9951 - Val Loss: 0.0180, Val Acc: 0.9938\n"}
+,{"stream_name":"stdout","time":40.732799015,"data":"Epoch [7/10] - Train Loss: 0.0136, Train Acc: 0.9956 - Val Loss: 0.0157, Val Acc: 0.9950\n"}
+,{"stream_name":"stdout","time":43.030336804,"data":"Epoch [8/10] - Train Loss: 0.0102, Train Acc: 0.9967 - Val Loss: 0.0145, Val Acc: 0.9957\n"}
+,{"stream_name":"stdout","time":45.312210889,"data":"Epoch [9/10] - Train Loss: 0.0097, Train Acc: 0.9971 - Val Loss: 0.0135, Val Acc: 0.9960\n"}
+,{"stream_name":"stdout","time":47.38437519,"data":"Epoch [10/10] - Train Loss: 0.0078, Train Acc: 0.9976 - Val Loss: 0.0380, Val Acc: 0.9890\n"}
+,{"stream_name":"stdout","time":47.384420371,"data":"\n"}
+,{"stream_name":"stdout","time":47.384426869,"data":"Training completed!\n"}
+,{"stream_name":"stdout","time":47.411934763,"data":"\n"}
+,{"stream_name":"stdout","time":47.411965475,"data":"Model state dict saved to: task1app1v1_model.pth\n"}
+,{"stream_name":"stdout","time":47.411972299,"data":"Full model saved to: task1app1v1_full_model.pth\n"}
+,{"stream_name":"stdout","time":47.411977566,"data":"Training history saved to: task1app1v1_training_history.npz\n"}
+,{"stream_name":"stdout","time":47.41198213,"data":"Model metadata saved to: task1app1v1_metamodel.txt\n"}
+,{"stream_name":"stdout","time":48.294584804,"data":"\n"}
+,{"stream_name":"stdout","time":48.294627356,"data":"rg95z Results:\n"}
+,{"stream_name":"stdout","time":48.294634054,"data":"  Loss: 0.0387\n"}
+,{"stream_name":"stdout","time":48.294638155,"data":"  Accuracy: 0.9879 (98.79%)\n"}
+,{"stream_name":"stdout","time":48.523238152,"data":"\n"}
+,{"stream_name":"stdout","time":48.523284694,"data":"gr95z Results:\n"}
+,{"stream_name":"stdout","time":48.52329128,"data":"  Loss: 1.8818\n"}
+,{"stream_name":"stdout","time":48.523295835,"data":"  Accuracy: 0.6930 (69.30%)\n"}
+,{"stream_name":"stdout","time":48.74746346,"data":"\n"}
+,{"stream_name":"stdout","time":48.747501317,"data":"gr95e Results:\n"}
+,{"stream_name":"stdout","time":48.747507698,"data":"  Loss: 1.9384\n"}
+,{"stream_name":"stdout","time":48.747512706,"data":"  Accuracy: 0.6340 (63.40%)\n"}
+,{"stream_name":"stdout","time":48.972328362,"data":"\n"}
+,{"stream_name":"stdout","time":48.972368175,"data":"gr95m Results:\n"}
+,{"stream_name":"stdout","time":48.972373985,"data":"  Loss: 1.9404\n"}
+,{"stream_name":"stdout","time":48.972378592,"data":"  Accuracy: 0.6245 (62.45%)\n"}
+,{"stream_name":"stdout","time":49.19714475,"data":"\n"}
+,{"stream_name":"stdout","time":49.197187463,"data":"gr95h Results:\n"}
+,{"stream_name":"stdout","time":49.197192491,"data":"  Loss: 2.1857\n"}
+,{"stream_name":"stdout","time":49.197195941,"data":"  Accuracy: 0.5769 (57.69%)\n"}
+,{"stream_name":"stdout","time":49.423894418,"data":"\n"}
+,{"stream_name":"stdout","time":49.423938921,"data":"gr95vh Results:\n"}
+,{"stream_name":"stdout","time":49.423944309,"data":"  Loss: 2.1946\n"}
+,{"stream_name":"stdout","time":49.42394753,"data":"  Accuracy: 0.5692 (56.92%)\n"}
+,{"stream_name":"stdout","time":49.650127005,"data":"\n"}
+,{"stream_name":"stdout","time":49.650167747,"data":"bw95z Results:\n"}
+,{"stream_name":"stdout","time":49.650173749,"data":"  Loss: 1.5328\n"}
+,{"stream_name":"stdout","time":49.650178758,"data":"  Accuracy: 0.7761 (77.61%)\n"}
+,{"stream_name":"stdout","time":49.879913059,"data":"\n"}
+,{"stream_name":"stdout","time":49.879947274,"data":"bw100z Results:\n"}
+,{"stream_name":"stdout","time":49.879954827,"data":"  Loss: 1.6045\n"}
+,{"stream_name":"stdout","time":49.879960324,"data":"  Accuracy: 0.7708 (77.08%)\n"}
+,{"stream_name":"stdout","time":57.821112703,"data":"\n"}
+,{"stream_name":"stdout","time":57.821172868,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":57.821181381,"data":"EVALUATION SUMMARY\n"}
+,{"stream_name":"stdout","time":57.821187133,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":57.821192409,"data":"rg95z          :  98.79%\n"}
+,{"stream_name":"stdout","time":57.821197921,"data":"gr95z          :  69.30%\n"}
+,{"stream_name":"stdout","time":57.821202795,"data":"gr95e          :  63.40%\n"}
+,{"stream_name":"stdout","time":57.821207434,"data":"gr95m          :  62.45%\n"}
+,{"stream_name":"stdout","time":57.821211833,"data":"gr95h          :  57.69%\n"}
+,{"stream_name":"stdout","time":57.821216443,"data":"gr95vh         :  56.92%\n"}
+,{"stream_name":"stdout","time":57.821221323,"data":"bw95z          :  77.61%\n"}
+,{"stream_name":"stdout","time":57.821226411,"data":"bw100z         :  77.08%\n"}
+,{"stream_name":"stdout","time":57.821231863,"data":"==================================================\n"}
+,{"stream_name":"stderr","time":62.714118712,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":62.714168327,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":62.872502762,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":62.872538384,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":63.482261311,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":63.482302658,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":63.513261786,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":63.835321701,"data":"[NbConvertApp] Writing 526228 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":66.153911456,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":66.153944534,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":66.177478637,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":67.00139574,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":67.001422344,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":67.001539169,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":67.001804878,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":67.002248316,"data":"[NbConvertApp] Writing 368441 bytes to __results__.html\n"}
+]
