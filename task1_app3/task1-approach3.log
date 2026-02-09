@@ -1,0 +1,154 @@
+[{"stream_name":"stderr","time":8.247607663,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.24768163,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.247688489,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.247692708,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.856185666,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.856216119,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.856219686,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.856222244,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.513817501,"data":"PyTorch version: 2.8.0+cu126\n"}
+,{"stream_name":"stdout","time":16.513872951,"data":"CUDA available: True\n"}
+,{"stream_name":"stdout","time":16.513879588,"data":"Using device: cuda\n"}
+,{"stream_name":"stdout","time":17.424010034,"data":"rg95z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.424074946,"data":"gr95z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":17.835405328,"data":"gr95e shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":18.118624258,"data":"gr95m shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":18.420965536,"data":"gr95h shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":18.725008141,"data":"gr95vh shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":18.725053129,"data":"bw95z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":19.057210382,"data":"bw100z shape: (10000, 28, 28, 3), labels: (10000,)\n"}
+,{"stream_name":"stdout","time":19.057249459,"data":"\n"}
+,{"stream_name":"stdout","time":19.057255192,"data":"Training data shape: (60000, 28, 28, 3)\n"}
+,{"stream_name":"stdout","time":19.05725932,"data":"Training labels shape: (60000,)\n"}
+,{"stream_name":"stdout","time":19.057263534,"data":"Number of classes: 10\n"}
+,{"stream_name":"stdout","time":19.746588331,"data":"Training set: torch.Size([54000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746624549,"data":"Validation set: torch.Size([6000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746630104,"data":"Test set rg95z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746633983,"data":"Test set gr95z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746637512,"data":"Test set gr95e: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.74664145,"data":"Test set gr95m: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746644985,"data":"Test set gr95h: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746648758,"data":"Test set gr95vh: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746652507,"data":"Test set bw95z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746656376,"data":"Test set bw100z: torch.Size([10000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":19.746660692,"data":"Input shape: torch.Size([3, 28, 28])\n"}
+,{"stream_name":"stdout","time":20.066967577,"data":"CNN3Layer(\n"}
+,{"stream_name":"stdout","time":20.067021486,"data":"  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n"}
+,{"stream_name":"stdout","time":20.067028142,"data":"  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n"}
+,{"stream_name":"stdout","time":20.067032298,"data":"  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n"}
+,{"stream_name":"stdout","time":20.067036438,"data":"  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n"}
+,{"stream_name":"stdout","time":20.067040896,"data":"  (conv3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n"}
+,{"stream_name":"stdout","time":20.067045162,"data":"  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n"}
+,{"stream_name":"stdout","time":20.067048963,"data":"  (fc1): Linear(in_features=576, out_features=128, bias=True)\n"}
+,{"stream_name":"stdout","time":20.067052947,"data":"  (dropout): Dropout(p=0.1, inplace=False)\n"}
+,{"stream_name":"stdout","time":20.06705681,"data":"  (fc2): Linear(in_features=128, out_features=10, bias=True)\n"}
+,{"stream_name":"stdout","time":20.06706116,"data":")\n"}
+,{"stream_name":"stdout","time":20.067065113,"data":"\n"}
+,{"stream_name":"stdout","time":20.067068528,"data":"Total parameters: 131,466\n"}
+,{"stream_name":"stdout","time":24.927196225,"data":"Model compiled successfully!\n"}
+,{"stream_name":"stdout","time":24.927233379,"data":"Optimizer: Adam\n"}
+,{"stream_name":"stdout","time":24.927239239,"data":"Loss function: CrossEntropyLoss\n"}
+,{"stream_name":"stdout","time":28.390823833,"data":"Epoch [1/35] - Train Loss: 2.9225, Train Acc: 0.1071 - Val Loss: 2.3024, Val Acc: 0.0982\n"}
+,{"stream_name":"stdout","time":30.445804584,"data":"Epoch [2/35] - Train Loss: 2.3026, Train Acc: 0.1100 - Val Loss: 2.3065, Val Acc: 0.1053\n"}
+,{"stream_name":"stdout","time":32.545086961,"data":"Epoch [3/35] - Train Loss: 2.3027, Train Acc: 0.1082 - Val Loss: 2.3028, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":34.615447774,"data":"Epoch [4/35] - Train Loss: 2.3031, Train Acc: 0.1083 - Val Loss: 2.3041, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":36.681871884,"data":"Epoch [5/35] - Train Loss: 2.3027, Train Acc: 0.1094 - Val Loss: 2.3032, Val Acc: 0.1040\n"}
+,{"stream_name":"stdout","time":38.910101771,"data":"Epoch [6/35] - Train Loss: 2.3031, Train Acc: 0.1081 - Val Loss: 2.3042, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":40.982712588,"data":"Epoch [7/35] - Train Loss: 2.3032, Train Acc: 0.1075 - Val Loss: 2.3030, Val Acc: 0.1055\n"}
+,{"stream_name":"stdout","time":43.063002294,"data":"Epoch [8/35] - Train Loss: 2.3029, Train Acc: 0.1079 - Val Loss: 2.3029, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":45.120229114,"data":"Epoch [9/35] - Train Loss: 2.3032, Train Acc: 0.1105 - Val Loss: 2.3032, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":47.193149833,"data":"Epoch [10/35] - Train Loss: 2.3028, Train Acc: 0.1073 - Val Loss: 2.3036, Val Acc: 0.1055\n"}
+,{"stream_name":"stdout","time":49.28092062,"data":"Epoch [11/35] - Train Loss: 2.3033, Train Acc: 0.1074 - Val Loss: 2.3041, Val Acc: 0.0967\n"}
+,{"stream_name":"stdout","time":51.373933847,"data":"Epoch [12/35] - Train Loss: 2.3033, Train Acc: 0.1044 - Val Loss: 2.3043, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":53.599202824,"data":"Epoch [13/35] - Train Loss: 2.3030, Train Acc: 0.1079 - Val Loss: 2.3048, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":55.681155615,"data":"Epoch [14/35] - Train Loss: 2.3030, Train Acc: 0.1099 - Val Loss: 2.3049, Val Acc: 0.0975\n"}
+,{"stream_name":"stdout","time":57.760866957,"data":"Epoch [15/35] - Train Loss: 2.3037, Train Acc: 0.1066 - Val Loss: 2.3027, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":59.843519693,"data":"Epoch [16/35] - Train Loss: 2.3030, Train Acc: 0.1072 - Val Loss: 2.3041, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":61.963187606,"data":"Epoch [17/35] - Train Loss: 2.3031, Train Acc: 0.1092 - Val Loss: 2.3018, Val Acc: 0.1055\n"}
+,{"stream_name":"stdout","time":64.040160196,"data":"Epoch [18/35] - Train Loss: 2.3034, Train Acc: 0.1062 - Val Loss: 2.3041, Val Acc: 0.0982\n"}
+,{"stream_name":"stdout","time":66.1186414,"data":"Epoch [19/35] - Train Loss: 2.3030, Train Acc: 0.1097 - Val Loss: 2.3033, Val Acc: 0.0982\n"}
+,{"stream_name":"stdout","time":68.193694911,"data":"Epoch [20/35] - Train Loss: 2.3032, Train Acc: 0.1074 - Val Loss: 2.3031, Val Acc: 0.1055\n"}
+,{"stream_name":"stdout","time":70.415392985,"data":"Epoch [21/35] - Train Loss: 2.3034, Train Acc: 0.1074 - Val Loss: 2.3026, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":72.4897736,"data":"Epoch [22/35] - Train Loss: 2.3032, Train Acc: 0.1089 - Val Loss: 2.3054, Val Acc: 0.0982\n"}
+,{"stream_name":"stdout","time":74.547250815,"data":"Epoch [23/35] - Train Loss: 2.3034, Train Acc: 0.1085 - Val Loss: 2.3041, Val Acc: 0.0982\n"}
+,{"stream_name":"stdout","time":76.613026459,"data":"Epoch [24/35] - Train Loss: 2.3036, Train Acc: 0.1081 - Val Loss: 2.3028, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":78.685359783,"data":"Epoch [25/35] - Train Loss: 2.3034, Train Acc: 0.1072 - Val Loss: 2.3032, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":80.746017172,"data":"Epoch [26/35] - Train Loss: 2.3031, Train Acc: 0.1100 - Val Loss: 2.3045, Val Acc: 0.0967\n"}
+,{"stream_name":"stdout","time":82.823123468,"data":"Epoch [27/35] - Train Loss: 2.3033, Train Acc: 0.1079 - Val Loss: 2.3030, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":85.036028105,"data":"Epoch [28/35] - Train Loss: 2.3031, Train Acc: 0.1102 - Val Loss: 2.3060, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":87.104479022,"data":"Epoch [29/35] - Train Loss: 2.3031, Train Acc: 0.1103 - Val Loss: 2.3034, Val Acc: 0.0953\n"}
+,{"stream_name":"stdout","time":89.168005666,"data":"Epoch [30/35] - Train Loss: 2.3030, Train Acc: 0.1083 - Val Loss: 2.3026, Val Acc: 0.1040\n"}
+,{"stream_name":"stdout","time":91.251989286,"data":"Epoch [31/35] - Train Loss: 2.3032, Train Acc: 0.1085 - Val Loss: 2.3029, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":93.333969517,"data":"Epoch [32/35] - Train Loss: 2.3028, Train Acc: 0.1097 - Val Loss: 2.3020, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":95.403763319,"data":"Epoch [33/35] - Train Loss: 2.3034, Train Acc: 0.1075 - Val Loss: 2.3035, Val Acc: 0.0982\n"}
+,{"stream_name":"stdout","time":97.473095737,"data":"Epoch [34/35] - Train Loss: 2.3031, Train Acc: 0.1107 - Val Loss: 2.3046, Val Acc: 0.0953\n"}
+,{"stream_name":"stdout","time":99.479361458,"data":"Epoch [35/35] - Train Loss: 2.3031, Train Acc: 0.1093 - Val Loss: 2.3030, Val Acc: 0.1090\n"}
+,{"stream_name":"stdout","time":99.479415882,"data":"\n"}
+,{"stream_name":"stdout","time":99.479423093,"data":"Training completed!\n"}
+,{"stream_name":"stdout","time":99.510320272,"data":"\n"}
+,{"stream_name":"stdout","time":99.51034261,"data":"Model state dict saved to: task1approach3sc1_model.pth\n"}
+,{"stream_name":"stdout","time":99.510348196,"data":"Full model saved to: task1approach3sc1_full_model.pth\n"}
+,{"stream_name":"stdout","time":99.510351758,"data":"Training history saved to: task1approach3sc1_training_history.npz\n"}
+,{"stream_name":"stdout","time":99.51035529,"data":"Model metadata saved to: task1approach3sc1_metamodel.txt\n"}
+,{"stream_name":"stdout","time":100.378537001,"data":"\n"}
+,{"stream_name":"stdout","time":100.378597806,"data":"rg95z Results:\n"}
+,{"stream_name":"stdout","time":100.378605185,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":100.378608582,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":100.583623805,"data":"\n"}
+,{"stream_name":"stdout","time":100.583669264,"data":"gr95z Results:\n"}
+,{"stream_name":"stdout","time":100.583674666,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":100.583678542,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":100.583682294,"data":"\n"}
+,{"stream_name":"stdout","time":100.583685823,"data":"gr95e Results:\n"}
+,{"stream_name":"stdout","time":100.583689354,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":100.583693398,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":100.992509187,"data":"\n"}
+,{"stream_name":"stdout","time":100.992534985,"data":"gr95m Results:\n"}
+,{"stream_name":"stdout","time":100.99253935,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":100.992542972,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":101.201080835,"data":"\n"}
+,{"stream_name":"stdout","time":101.201113786,"data":"gr95h Results:\n"}
+,{"stream_name":"stdout","time":101.20112002,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":101.201124444,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":101.415186335,"data":"\n"}
+,{"stream_name":"stdout","time":101.415223872,"data":"gr95vh Results:\n"}
+,{"stream_name":"stdout","time":101.415229743,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":101.415234087,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":101.415238856,"data":"\n"}
+,{"stream_name":"stdout","time":101.41524261,"data":"bw95z Results:\n"}
+,{"stream_name":"stdout","time":101.415246522,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":101.415250519,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":101.821952484,"data":"\n"}
+,{"stream_name":"stdout","time":101.821985652,"data":"bw100z Results:\n"}
+,{"stream_name":"stdout","time":101.82198966,"data":"  Loss: 2.3023\n"}
+,{"stream_name":"stdout","time":101.821992255,"data":"  Accuracy: 0.1135 (11.35%)\n"}
+,{"stream_name":"stdout","time":109.79510376100001,"data":"\n"}
+,{"stream_name":"stdout","time":109.795160405,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":109.795166267,"data":"EVALUATION SUMMARY\n"}
+,{"stream_name":"stdout","time":109.795169728,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":109.795172892,"data":"rg95z          :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795176072,"data":"gr95z          :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795180308,"data":"gr95e          :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795186606,"data":"gr95m          :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795191443,"data":"gr95h          :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795197279,"data":"gr95vh         :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795202562,"data":"bw95z          :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795207212,"data":"bw100z         :  11.35%\n"}
+,{"stream_name":"stdout","time":109.795212564,"data":"==================================================\n"}
+,{"stream_name":"stderr","time":114.552236235,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":114.552287027,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":114.709396741,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":114.709430757,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":115.332973624,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":115.333014263,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":115.366821128,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":115.665488486,"data":"[NbConvertApp] Writing 371192 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":118.026943028,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":118.026984531,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":118.053052556,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":118.899772507,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":118.899815616,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":118.900054971,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":118.900330725,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":118.90064196,"data":"[NbConvertApp] Writing 370451 bytes to __results__.html\n"}
+]

@@ -1,0 +1,97 @@
+[{"stream_name":"stderr","time":7.584751922,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.584857835,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.584865674,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.584870063,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.185596926,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.185633505,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.185638785,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.185642786,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.133663398,"data":"Using device: cuda\n"}
+,{"stream_name":"stdout","time":13.476412883,"data":"Model loaded and frozen for analysis.\n"}
+,{"stream_name":"stdout","time":20.163386623,"data":"Generating visualizations for all 64 channels in conv3... This may take a few minutes.\n"}
+,{"stream_name":"stdout","time":31.825752922,"data":"Validation loader initialized with 1000 images.\n"}
+,{"stream_name":"stdout","time":31.825812606,"data":"Tensor shape: torch.Size([1000, 3, 28, 28])\n"}
+,{"stream_name":"stdout","time":31.825821054,"data":"Generating feature visualization for conv3 Channel 2...\n"}
+,{"stream_name":"stdout","time":32.081755894,"data":"Finding top activating images from the dataset...\n"}
+,{"stream_name":"stderr","time":72.935920524,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":72.935957288,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":73.092242776,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":73.092270038,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":73.718669316,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":73.718722895,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":73.749928624,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":74.09056354,"data":"[NbConvertApp] Writing 2708914 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":76.451636647,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":76.45168575,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":76.47662011,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":77.371459682,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":77.371492912,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.371592715,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.37193031300001,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.372119784,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.372264549,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.372447858,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.372600224,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.372790023,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.37296508,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.373114789,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.373251719,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.373419568,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.373608098,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.373749636,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.373947108,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.374087459,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.374256939,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.374413914,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.374575982,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.374723068,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.374905,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.375064836,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.375208523,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.375381058,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.375521904,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.375684907,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.375849477,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.376011564,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.376158798,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.376323219,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.376483575,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.376617858,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.37679367,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.376969063,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.377126042,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.377294137,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.377438845,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.377614298,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.37779935,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.377946462,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.378113544,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.378294867,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.378454332,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.378607563,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.378802136,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.378945763,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.37913991,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.379299608,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.379446197,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.379601606,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.379743519,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.379913294,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.380077517,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.380233713,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.38039865,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.380576461,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.380721769,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.380925447,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.381042497,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.381224297,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.381383827,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.381563339,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.381740529,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.381936188,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.382068106,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.382272179,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.38240671,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.382585808,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":77.382820271,"data":"[NbConvertApp] Writing 335974 bytes to __results__.html\n"}
+]

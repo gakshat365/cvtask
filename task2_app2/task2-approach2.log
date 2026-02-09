@@ -1,0 +1,65 @@
+[{"stream_name":"stderr","time":8.809378215,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.809439872,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.809446966,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.809451952,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.44133434,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.441361297,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.441366585,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.441369098,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":18.214522726,"data":"[Phase 1] Model loaded from /kaggle/input/task1app3models/pytorch/default/2/task4_irm_modelv1.pth\n"}
+,{"stream_name":"stdout","time":18.214569445,"data":"Loading RG Data: /kaggle/input/cmnistneo1/train_data_rg95z.npz\n"}
+,{"stream_name":"stdout","time":18.945196339,"data":"Loading BW Data: /kaggle/input/cmnistneo1/test_data_bw100z.npz\n"}
+,{"stream_name":"stdout","time":20.730441219,"data":"[Phase 2] Scoring neurons...\n"}
+,{"stream_name":"stdout","time":21.157979776,"data":"\n"}
+,{"stream_name":"stdout","time":21.158013475,"data":"[Phase 2] Identified Roles:\n"}
+,{"stream_name":"stdout","time":21.158019047,"data":"  Total Neurons analyzed: 160\n"}
+,{"stream_name":"stdout","time":21.1580229,"data":"  Approx. Traitors (Ratio \u003e 2.0): 1\n"}
+,{"stream_name":"stdout","time":21.158027212,"data":"  Approx. Heroes (Ratio \u003c 0.5): 155\n"}
+,{"stream_name":"stdout","time":21.158031322,"data":"\n"}
+,{"stream_name":"stdout","time":21.158034752,"data":"=== TOP 5 TRAITORS (Color Biased) ===\n"}
+,{"stream_name":"stdout","time":21.158038228,"data":"conv2 Ch49 | ColorMI: 0.001 | ShapeMI: 0.000 | Ratio: 594.7\n"}
+,{"stream_name":"stdout","time":21.15804186,"data":"conv2 Ch47 | ColorMI: 0.074 | ShapeMI: 0.138 | Ratio: 0.5\n"}
+,{"stream_name":"stdout","time":21.158045667,"data":"conv3 Ch37 | ColorMI: 0.052 | ShapeMI: 0.097 | Ratio: 0.5\n"}
+,{"stream_name":"stdout","time":21.158049312,"data":"conv3 Ch18 | ColorMI: 0.043 | ShapeMI: 0.122 | Ratio: 0.4\n"}
+,{"stream_name":"stdout","time":21.158054365,"data":"conv2 Ch61 | ColorMI: 0.044 | ShapeMI: 0.148 | Ratio: 0.3\n"}
+,{"stream_name":"stdout","time":21.158057895,"data":"\n"}
+,{"stream_name":"stdout","time":21.158060283,"data":"=== TOP 5 HEROES (Shape Focused) ===\n"}
+,{"stream_name":"stdout","time":21.158062655,"data":"conv3 Ch31 | ColorMI: 0.007 | ShapeMI: 0.343\n"}
+,{"stream_name":"stdout","time":21.158065046,"data":"conv3 Ch9 | ColorMI: 0.010 | ShapeMI: 0.341\n"}
+,{"stream_name":"stdout","time":21.158067387,"data":"conv3 Ch13 | ColorMI: 0.010 | ShapeMI: 0.325\n"}
+,{"stream_name":"stdout","time":21.15806998,"data":"conv3 Ch3 | ColorMI: 0.007 | ShapeMI: 0.309\n"}
+,{"stream_name":"stdout","time":21.158072265,"data":"conv3 Ch16 | ColorMI: 0.012 | ShapeMI: 0.309\n"}
+,{"stream_name":"stdout","time":21.463127102,"data":"[Phase 2] Scatter plot saved to results//neuron_landscape.png\n"}
+,{"stream_name":"stdout","time":42.188757117,"data":"\n"}
+,{"stream_name":"stdout","time":42.188792543,"data":"[Phase 4] Dashboard saved to results/neuron_roles_dashboard.png\n"}
+,{"stream_name":"stdout","time":42.188808786,"data":"[Phase 3] Scanning for Polysemantic Neurons...\n"}
+,{"stream_name":"stdout","time":43.213026146,"data":"[Phase 3] Analyzed 160 neurons, filtered 65 weak/low-entropy neurons\n"}
+,{"stream_name":"stdout","time":43.213077053,"data":"[Phase 3] Found 92 neurons with poly_score \u003e 0.2\n"}
+,{"stream_name":"stdout","time":43.213084043,"data":"\n"}
+,{"stream_name":"stdout","time":43.213086577,"data":"[Phase 3] Total polysemantic neurons found: 92 (activating for \u003e1 digit class)\n"}
+,{"stream_name":"stdout","time":43.213089363,"data":"[Phase 3] Visualizing top 5 most polysemantic neurons\n"}
+,{"stream_name":"stdout","time":43.213091819,"data":"\n"}
+,{"stream_name":"stdout","time":43.213094146,"data":"=== TOP 5 POLYSEMANTIC NEURONS ===\n"}
+,{"stream_name":"stdout","time":43.213096491,"data":"1. conv3 Ch31 | Entropy: 2.015 | Strength: 25.417 | PolyScore: 51.207\n"}
+,{"stream_name":"stdout","time":43.213098733,"data":"2. conv3 Ch48 | Entropy: 2.087 | Strength: 17.761 | PolyScore: 37.065\n"}
+,{"stream_name":"stdout","time":43.213101238,"data":"3. conv3 Ch3 | Entropy: 2.087 | Strength: 17.644 | PolyScore: 36.825\n"}
+,{"stream_name":"stdout","time":43.21310345,"data":"4. conv3 Ch7 | Entropy: 2.191 | Strength: 15.247 | PolyScore: 33.409\n"}
+,{"stream_name":"stdout","time":43.213106555,"data":"5. conv3 Ch63 | Entropy: 2.057 | Strength: 16.155 | PolyScore: 33.232\n"}
+,{"stream_name":"stdout","time":51.925820331,"data":"[Phase 3] Polysemantic examples saved to results/polysemantic_examples.png\n"}
+,{"stream_name":"stderr","time":58.183076877,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":58.183116566,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":58.339382741,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":58.339417763,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":58.971976473,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":58.972013194,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":59.074233586,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":59.38005775,"data":"[NbConvertApp] Writing 318800 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":61.863130421,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":61.863191976,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":61.888240855,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":62.801722002,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":62.801779781,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":62.801979057,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":62.802241559,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":62.80251213,"data":"[NbConvertApp] Writing 399729 bytes to __results__.html\n"}
+]
