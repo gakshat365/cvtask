@@ -1,0 +1,113 @@
+[{"stream_name":"stderr","time":7.991330802,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.991416517,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.9914230459999995,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.991427372,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.598283469,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.59831565,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.598321199,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.598325289,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.797599187,"data":"\n"}
+,{"stream_name":"stdout","time":16.797663224,"data":"[Data] Loading from /kaggle/input/cmnistneo1...\n"}
+,{"stream_name":"stdout","time":18.094379251,"data":"[Data] Analyzing bias...\n"}
+,{"stream_name":"stdout","time":18.316275764,"data":"  Env 1 (Aligned/Biased): 57948 samples\n"}
+,{"stream_name":"stdout","time":18.316314565,"data":"  Env 2 (Conflict/OOD):   2052 samples\n"}
+,{"stream_name":"stdout","time":18.565674976,"data":"\n"}
+,{"stream_name":"stdout","time":18.565715738,"data":"[Data] Loading Test Sets...\n"}
+,{"stream_name":"stdout","time":25.707637635,"data":"\n"}
+,{"stream_name":"stdout","time":25.707681493,"data":"[Train] Starting IRM Training on cuda...\n"}
+,{"stream_name":"stdout","time":25.707689775,"data":"  Penalty: 100.0 (Annealed for 10 epochs)\n"}
+,{"stream_name":"stdout","time":30.759478375,"data":"Epoch [1/50] Loss: 0.5295 | Train Acc: 87.4% | Val Acc (OOD): 91.5%\n"}
+,{"stream_name":"stdout","time":34.572152348,"data":"Epoch [2/50] Loss: 0.0870 | Train Acc: 98.0% | Val Acc (OOD): 95.0%\n"}
+,{"stream_name":"stdout","time":38.3688994,"data":"Epoch [3/50] Loss: 0.0462 | Train Acc: 98.7% | Val Acc (OOD): 94.6%\n"}
+,{"stream_name":"stdout","time":42.335560733,"data":"Epoch [4/50] Loss: 0.0336 | Train Acc: 99.0% | Val Acc (OOD): 95.1%\n"}
+,{"stream_name":"stdout","time":46.125899088,"data":"Epoch [5/50] Loss: 0.0245 | Train Acc: 99.2% | Val Acc (OOD): 95.0%\n"}
+,{"stream_name":"stdout","time":49.945412541,"data":"Epoch [6/50] Loss: 0.0237 | Train Acc: 99.3% | Val Acc (OOD): 95.4%\n"}
+,{"stream_name":"stdout","time":53.767730023,"data":"Epoch [7/50] Loss: 0.0194 | Train Acc: 99.3% | Val Acc (OOD): 95.2%\n"}
+,{"stream_name":"stdout","time":57.568509807,"data":"Epoch [8/50] Loss: 0.0185 | Train Acc: 99.4% | Val Acc (OOD): 94.3%\n"}
+,{"stream_name":"stdout","time":61.401279619,"data":"Epoch [9/50] Loss: 0.0159 | Train Acc: 99.4% | Val Acc (OOD): 94.1%\n"}
+,{"stream_name":"stdout","time":65.258249643,"data":"Epoch [10/50] Loss: 0.0154 | Train Acc: 99.5% | Val Acc (OOD): 95.0%\n"}
+,{"stream_name":"stdout","time":69.703746939,"data":"Epoch [11/50] Loss: 13.9000 | Train Acc: 30.7% | Val Acc (OOD): 21.6%\n"}
+,{"stream_name":"stdout","time":73.903755545,"data":"Epoch [12/50] Loss: 2.3275 | Train Acc: 27.1% | Val Acc (OOD): 20.2%\n"}
+,{"stream_name":"stdout","time":78.091468606,"data":"Epoch [13/50] Loss: 2.3165 | Train Acc: 25.0% | Val Acc (OOD): 22.5%\n"}
+,{"stream_name":"stdout","time":82.286653174,"data":"Epoch [14/50] Loss: 2.2460 | Train Acc: 26.3% | Val Acc (OOD): 24.7%\n"}
+,{"stream_name":"stdout","time":86.463523291,"data":"Epoch [15/50] Loss: 2.1886 | Train Acc: 27.4% | Val Acc (OOD): 24.6%\n"}
+,{"stream_name":"stdout","time":90.654793237,"data":"Epoch [16/50] Loss: 2.1061 | Train Acc: 28.5% | Val Acc (OOD): 25.1%\n"}
+,{"stream_name":"stdout","time":95.022880629,"data":"Epoch [17/50] Loss: 2.0534 | Train Acc: 29.2% | Val Acc (OOD): 26.2%\n"}
+,{"stream_name":"stdout","time":99.229774609,"data":"Epoch [18/50] Loss: 2.0424 | Train Acc: 29.4% | Val Acc (OOD): 23.9%\n"}
+,{"stream_name":"stdout","time":103.452330697,"data":"Epoch [19/50] Loss: 1.8663 | Train Acc: 30.1% | Val Acc (OOD): 24.1%\n"}
+,{"stream_name":"stdout","time":107.680761663,"data":"Epoch [20/50] Loss: 1.7541 | Train Acc: 34.0% | Val Acc (OOD): 27.0%\n"}
+,{"stream_name":"stdout","time":111.900336337,"data":"Epoch [21/50] Loss: 1.7174 | Train Acc: 39.1% | Val Acc (OOD): 29.2%\n"}
+,{"stream_name":"stdout","time":116.130510262,"data":"Epoch [22/50] Loss: 1.5817 | Train Acc: 44.9% | Val Acc (OOD): 39.3%\n"}
+,{"stream_name":"stdout","time":120.361022217,"data":"Epoch [23/50] Loss: 1.4215 | Train Acc: 55.1% | Val Acc (OOD): 56.9%\n"}
+,{"stream_name":"stdout","time":124.774349423,"data":"Epoch [24/50] Loss: 1.2490 | Train Acc: 67.7% | Val Acc (OOD): 73.1%\n"}
+,{"stream_name":"stdout","time":129.018113255,"data":"Epoch [25/50] Loss: 0.9674 | Train Acc: 79.6% | Val Acc (OOD): 81.3%\n"}
+,{"stream_name":"stdout","time":133.290272075,"data":"Epoch [26/50] Loss: 0.7107 | Train Acc: 85.9% | Val Acc (OOD): 88.9%\n"}
+,{"stream_name":"stdout","time":137.570946049,"data":"Epoch [27/50] Loss: 0.4521 | Train Acc: 92.3% | Val Acc (OOD): 90.3%\n"}
+,{"stream_name":"stdout","time":141.860380434,"data":"Epoch [28/50] Loss: 0.3302 | Train Acc: 95.0% | Val Acc (OOD): 89.2%\n"}
+,{"stream_name":"stdout","time":146.128244238,"data":"Epoch [29/50] Loss: 0.2541 | Train Acc: 96.6% | Val Acc (OOD): 88.2%\n"}
+,{"stream_name":"stdout","time":150.371492768,"data":"Epoch [30/50] Loss: 0.2346 | Train Acc: 97.1% | Val Acc (OOD): 89.3%\n"}
+,{"stream_name":"stdout","time":154.77905911,"data":"Epoch [31/50] Loss: 0.1814 | Train Acc: 97.7% | Val Acc (OOD): 87.5%\n"}
+,{"stream_name":"stdout","time":159.022524921,"data":"Epoch [32/50] Loss: 0.1725 | Train Acc: 98.1% | Val Acc (OOD): 88.1%\n"}
+,{"stream_name":"stdout","time":163.250256824,"data":"Epoch [33/50] Loss: 0.1496 | Train Acc: 98.2% | Val Acc (OOD): 89.0%\n"}
+,{"stream_name":"stdout","time":167.485412964,"data":"Epoch [34/50] Loss: 0.1333 | Train Acc: 98.3% | Val Acc (OOD): 90.4%\n"}
+,{"stream_name":"stdout","time":171.682897291,"data":"Epoch [35/50] Loss: 0.1284 | Train Acc: 98.5% | Val Acc (OOD): 91.7%\n"}
+,{"stream_name":"stdout","time":175.891994773,"data":"Epoch [36/50] Loss: 0.1211 | Train Acc: 98.6% | Val Acc (OOD): 92.1%\n"}
+,{"stream_name":"stdout","time":180.235612741,"data":"Epoch [37/50] Loss: 0.1100 | Train Acc: 98.7% | Val Acc (OOD): 94.0%\n"}
+,{"stream_name":"stdout","time":184.445128943,"data":"Epoch [38/50] Loss: 0.1091 | Train Acc: 98.8% | Val Acc (OOD): 92.9%\n"}
+,{"stream_name":"stdout","time":188.624446507,"data":"Epoch [39/50] Loss: 0.0933 | Train Acc: 98.9% | Val Acc (OOD): 94.6%\n"}
+,{"stream_name":"stdout","time":192.816418765,"data":"Epoch [40/50] Loss: 0.0800 | Train Acc: 99.0% | Val Acc (OOD): 94.5%\n"}
+,{"stream_name":"stdout","time":197.003752572,"data":"Epoch [41/50] Loss: 0.0730 | Train Acc: 99.0% | Val Acc (OOD): 95.0%\n"}
+,{"stream_name":"stdout","time":201.197058938,"data":"Epoch [42/50] Loss: 0.0684 | Train Acc: 99.1% | Val Acc (OOD): 95.2%\n"}
+,{"stream_name":"stdout","time":205.427073726,"data":"Epoch [43/50] Loss: 0.0734 | Train Acc: 99.2% | Val Acc (OOD): 95.0%\n"}
+,{"stream_name":"stdout","time":209.786909241,"data":"Epoch [44/50] Loss: 0.0644 | Train Acc: 99.2% | Val Acc (OOD): 96.0%\n"}
+,{"stream_name":"stdout","time":213.990950072,"data":"Epoch [45/50] Loss: 0.0592 | Train Acc: 99.2% | Val Acc (OOD): 96.2%\n"}
+,{"stream_name":"stdout","time":218.188961258,"data":"Epoch [46/50] Loss: 0.0482 | Train Acc: 99.3% | Val Acc (OOD): 96.2%\n"}
+,{"stream_name":"stdout","time":222.402852133,"data":"Epoch [47/50] Loss: 0.0605 | Train Acc: 99.2% | Val Acc (OOD): 96.7%\n"}
+,{"stream_name":"stdout","time":226.619882394,"data":"Epoch [48/50] Loss: 0.0425 | Train Acc: 99.4% | Val Acc (OOD): 96.2%\n"}
+,{"stream_name":"stdout","time":230.814681427,"data":"Epoch [49/50] Loss: 0.0426 | Train Acc: 99.4% | Val Acc (OOD): 96.2%\n"}
+,{"stream_name":"stdout","time":235.180067438,"data":"Epoch [50/50] Loss: 0.0417 | Train Acc: 99.4% | Val Acc (OOD): 95.7%\n"}
+,{"stream_name":"stdout","time":235.180116673,"data":"\n"}
+,{"stream_name":"stdout","time":235.180123791,"data":"[Done] Model saved to task4_irm_model.pth\n"}
+,{"stream_name":"stdout","time":235.18012838,"data":"\n"}
+,{"stream_name":"stdout","time":235.180132869,"data":"[Evaluate] Starting comprehensive evaluation...\n"}
+,{"stream_name":"stdout","time":235.390717427,"data":"rg95z      | Loss: 0.0227 | Acc: 99.35%\n"}
+,{"stream_name":"stdout","time":235.59695049,"data":"gr95z      | Loss: 0.1438 | Acc: 95.68%\n"}
+,{"stream_name":"stdout","time":235.59700694,"data":"gr95e      | Loss: 0.5861 | Acc: 88.42%\n"}
+,{"stream_name":"stdout","time":236.00199552,"data":"gr95m      | Loss: 0.6375 | Acc: 87.10%\n"}
+,{"stream_name":"stdout","time":236.002046777,"data":"gr95h      | Loss: 0.9700 | Acc: 82.78%\n"}
+,{"stream_name":"stdout","time":236.406242444,"data":"gr95vh     | Loss: 1.0041 | Acc: 81.80%\n"}
+,{"stream_name":"stdout","time":236.406280805,"data":"bw95z      | Loss: 0.1196 | Acc: 97.23%\n"}
+,{"stream_name":"stdout","time":236.815119133,"data":"bw100z     | Loss: 0.1221 | Acc: 97.16%\n"}
+,{"stream_name":"stdout","time":237.1288804,"data":"Saved accuracy_comparison.png\n"}
+,{"stream_name":"stdout","time":237.538272356,"data":"Saved training_curves.png\n"}
+,{"stream_name":"stdout","time":243.426419879,"data":"Saved confusion_matrices.png\n"}
+,{"stream_name":"stdout","time":243.426466864,"data":"\n"}
+,{"stream_name":"stdout","time":243.426474885,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":243.426480612,"data":"EVALUATION SUMMARY\n"}
+,{"stream_name":"stdout","time":243.4264861,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":243.426492214,"data":"rg95z          :  99.35%\n"}
+,{"stream_name":"stdout","time":243.426497678,"data":"gr95z          :  95.68%\n"}
+,{"stream_name":"stdout","time":243.426503044,"data":"gr95e          :  88.42%\n"}
+,{"stream_name":"stdout","time":243.426508232,"data":"gr95m          :  87.10%\n"}
+,{"stream_name":"stdout","time":243.42651331,"data":"gr95h          :  82.78%\n"}
+,{"stream_name":"stdout","time":243.426518433,"data":"gr95vh         :  81.80%\n"}
+,{"stream_name":"stdout","time":243.426523698,"data":"bw95z          :  97.23%\n"}
+,{"stream_name":"stdout","time":243.426529109,"data":"bw100z         :  97.16%\n"}
+,{"stream_name":"stdout","time":243.426534091,"data":"==================================================\n"}
+,{"stream_name":"stderr","time":250.368597503,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":250.368644452,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":250.523832489,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":250.523880029,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":251.150050142,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":251.150094442,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":251.182252307,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":251.483030266,"data":"[NbConvertApp] Writing 505709 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":253.86987608,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":253.869919543,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":253.894423774,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":254.743902319,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":254.743946845,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":254.744185088,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":254.744425865,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":254.744800145,"data":"[NbConvertApp] Writing 354881 bytes to __results__.html\n"}
+]
