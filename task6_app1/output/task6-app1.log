@@ -1,0 +1,230 @@
+[{"stream_name":"stderr","time":13.740876005,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":13.740950871,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":13.740956952,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":13.740960592,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":14.566644751,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":14.566675296,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":14.566680541,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":14.566684797,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":27.025598471,"data":"Using device: cuda\n"}
+,{"stream_name":"stdout","time":27.025652399,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":27.025660615,"data":"Task 6: The Decomposition - Sparse Autoencoders\n"}
+,{"stream_name":"stdout","time":27.02566577,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":27.025670805,"data":"\n"}
+,{"stream_name":"stdout","time":27.025675331,"data":"[1/6] Loading data...\n"}
+,{"stream_name":"stdout","time":28.292555751,"data":"Training data: (60000, 28, 28, 3)\n"}
+,{"stream_name":"stdout","time":28.292598271,"data":"Test data: (10000, 28, 28, 3)\n"}
+,{"stream_name":"stdout","time":28.292606346,"data":"\n"}
+,{"stream_name":"stdout","time":28.292612094,"data":"[2/6] Loading biased model...\n"}
+,{"stream_name":"stdout","time":28.724624002,"data":"Loaded model from /kaggle/input/task1app3models/pytorch/default/2/task1approach3sc1_modelv1.pth\n"}
+,{"stream_name":"stdout","time":28.724659571,"data":"\n"}
+,{"stream_name":"stdout","time":28.724663905,"data":"[3/6] Extracting intermediate activations...\n"}
+,{"stream_name":"stdout","time":31.599266719,"data":"Extracted activations shape: torch.Size([60000, 128])\n"}
+,{"stream_name":"stdout","time":31.599299971,"data":"\n"}
+,{"stream_name":"stdout","time":31.599308097,"data":"[4/6] Training Sparse Autoencoder...\n"}
+,{"stream_name":"stdout","time":31.599313652,"data":"SAE Architecture: 128 -\u003e 512 -\u003e 128\n"}
+,{"stream_name":"stdout","time":44.399300489,"data":"Epoch [10/50] - Total Loss: 0.007392, Recon: 0.004927, Sparsity: 2.465577\n"}
+,{"stream_name":"stdout","time":50.648852497,"data":"Epoch [20/50] - Total Loss: 0.005309, Recon: 0.003199, Sparsity: 2.109406\n"}
+,{"stream_name":"stdout","time":57.022749162,"data":"Epoch [30/50] - Total Loss: 0.004855, Recon: 0.002981, Sparsity: 1.873571\n"}
+,{"stream_name":"stdout","time":63.293738808,"data":"Epoch [40/50] - Total Loss: 0.004065, Recon: 0.002334, Sparsity: 1.730957\n"}
+,{"stream_name":"stdout","time":69.677292623,"data":"Epoch [50/50] - Total Loss: 0.004597, Recon: 0.002989, Sparsity: 1.607744\n"}
+,{"stream_name":"stdout","time":70.05985209,"data":"\n"}
+,{"stream_name":"stdout","time":70.05989336,"data":"[5/6] Analyzing learned features...\n"}
+,{"stream_name":"stdout","time":70.059899403,"data":"\n"}
+,{"stream_name":"stdout","time":70.059905685,"data":"Feature Analysis Summary (first 20 features):\n"}
+,{"stream_name":"stdout","time":70.059909596,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":70.05993454,"data":"Feature   0: Dominant Label = 2, Mean Act = 10.7555, Label Dist = [ 0  0 10  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059938922,"data":"Feature   1: Dominant Label = 0, Mean Act = 10.5264, Label Dist = [10  0  0  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.05994322,"data":"Feature   2: Dominant Label = 2, Mean Act = 5.9120, Label Dist = [0 0 7 0 0 0 0 3 0 0]\n"}
+,{"stream_name":"stdout","time":70.059947479,"data":"Feature   3: Dominant Label = 5, Mean Act = 12.9730, Label Dist = [0 0 0 3 0 7 0 0 0 0]\n"}
+,{"stream_name":"stdout","time":70.059952169,"data":"Feature   4: Dominant Label = 3, Mean Act = 15.3765, Label Dist = [ 0  0  0 10  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059956029,"data":"Feature   5: Dominant Label = 3, Mean Act = 8.9137, Label Dist = [ 0  0  0 10  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059959845,"data":"Feature   6: Dominant Label = 3, Mean Act = 10.1155, Label Dist = [ 0  0  0 10  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059963869,"data":"Feature   7: Dominant Label = 2, Mean Act = 7.0976, Label Dist = [0 0 7 3 0 0 0 0 0 0]\n"}
+,{"stream_name":"stdout","time":70.059967929,"data":"Feature   8: Dominant Label = 2, Mean Act = 10.3758, Label Dist = [ 0  0 10  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059971534,"data":"Feature   9: Dominant Label = 5, Mean Act = 3.7247, Label Dist = [0 0 2 0 0 8 0 0 0 0]\n"}
+,{"stream_name":"stdout","time":70.059975098,"data":"Feature  10: Dominant Label = 2, Mean Act = 6.3319, Label Dist = [ 0  0 10  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059978714,"data":"Feature  11: Dominant Label = 5, Mean Act = 1.7182, Label Dist = [0 0 0 1 0 9 0 0 0 0]\n"}
+,{"stream_name":"stdout","time":70.059982249,"data":"Feature  12: Dominant Label = 2, Mean Act = 9.0921, Label Dist = [ 0  0 10  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059985884,"data":"Feature  13: Dominant Label = 0, Mean Act = 12.1121, Label Dist = [10  0  0  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.059989423,"data":"Feature  14: Dominant Label = 9, Mean Act = 1.5399, Label Dist = [0 0 0 0 1 0 0 0 0 9]\n"}
+,{"stream_name":"stdout","time":70.059992953,"data":"Feature  15: Dominant Label = 5, Mean Act = 2.5943, Label Dist = [0 0 0 0 0 9 1 0 0 0]\n"}
+,{"stream_name":"stdout","time":70.059996514,"data":"Feature  16: Dominant Label = 6, Mean Act = 0.0000, Label Dist = [2 0 0 0 0 2 3 1 1 1]\n"}
+,{"stream_name":"stdout","time":70.060000013,"data":"Feature  17: Dominant Label = 2, Mean Act = 12.5977, Label Dist = [ 0  0 10  0  0  0  0  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.060003571,"data":"Feature  18: Dominant Label = 6, Mean Act = 0.0000, Label Dist = [2 0 0 0 0 2 3 1 1 1]\n"}
+,{"stream_name":"stdout","time":70.06000773,"data":"Feature  19: Dominant Label = 6, Mean Act = 16.3670, Label Dist = [ 0  0  0  0  0  0 10  0  0  0]\n"}
+,{"stream_name":"stdout","time":70.060012161,"data":"\n"}
+,{"stream_name":"stdout","time":70.060016019,"data":"Visualizing top 5 features...\n"}
+,{"stream_name":"stdout","time":73.049811515,"data":"\n"}
+,{"stream_name":"stdout","time":73.049857883,"data":"[6/6] Analyzing color vs. shape features...\n"}
+,{"stream_name":"stdout","time":73.049863452,"data":"Extracting training activations...\n"}
+,{"stream_name":"stdout","time":74.460621294,"data":"Extracting test activations...\n"}
+,{"stream_name":"stdout","time":74.849122066,"data":"\n"}
+,{"stream_name":"stdout","time":74.84920558,"data":"=== Feature Analysis Results ===\n"}
+,{"stream_name":"stdout","time":74.849211541,"data":"\n"}
+,{"stream_name":"stdout","time":74.849242513,"data":"Top 20 Color-Sensitive Features (high train/test difference):\n"}
+,{"stream_name":"stdout","time":74.849346595,"data":"  Feature indices: [400 442 225 106 148  99  55 380 258 264  97 351 291 188 295  19  93  57\n"}
+,{"stream_name":"stdout","time":74.849353073,"data":" 161 381]\n"}
+,{"stream_name":"stdout","time":74.8493568,"data":"  Mean differences: [2.76670407 2.64462405 2.60461029 2.53856493 2.36945487 2.32001688\n"}
+,{"stream_name":"stdout","time":74.84936014,"data":" 2.26697371 2.24842946 2.23330281 2.22872438 2.21844433 2.16991236\n"}
+,{"stream_name":"stdout","time":74.849363613,"data":" 2.15160236 2.14844674 2.13360169 2.13046245 2.11212705 2.10523159\n"}
+,{"stream_name":"stdout","time":74.849366903,"data":" 2.09573213 2.08520925]\n"}
+,{"stream_name":"stdout","time":74.849370241,"data":"\n"}
+,{"stream_name":"stdout","time":74.849373395,"data":"Top 20 Shape-Sensitive Features (low train/test difference):\n"}
+,{"stream_name":"stdout","time":74.84937665,"data":"  Feature indices: [ 60 463 467 476 396 363 370 414 376 377 345 275 232 121 104 350 317 319\n"}
+,{"stream_name":"stdout","time":74.849380474,"data":" 268 211]\n"}
+,{"stream_name":"stdout","time":74.849385486,"data":"  Mean differences: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n"}
+,{"stream_name":"stdout","time":75.810108246,"data":"\n"}
+,{"stream_name":"stdout","time":75.81014438,"data":"=== Running Intervention Experiments ===\n"}
+,{"stream_name":"stdout","time":75.81015175900001,"data":"\n"}
+,{"stream_name":"stdout","time":75.810156451,"data":"Intervening on most color-sensitive features:\n"}
+,{"stream_name":"stdout","time":75.810161869,"data":"\n"}
+,{"stream_name":"stdout","time":75.810167326,"data":"=== Intervention Experiment on Feature 400 ===\n"}
+,{"stream_name":"stdout","time":75.810172964,"data":"\n"}
+,{"stream_name":"stdout","time":75.810177147,"data":"Scale Factor: 0.0\n"}
+,{"stream_name":"stdout","time":75.810181614,"data":"  Accuracy: 99.00%\n"}
+,{"stream_name":"stdout","time":75.810186033,"data":"  Prediction Distribution: [12 13  8 10  8 10 12 13  7  7]\n"}
+,{"stream_name":"stdout","time":75.810190606,"data":"\n"}
+,{"stream_name":"stdout","time":75.810194772,"data":"Scale Factor: 0.5\n"}
+,{"stream_name":"stdout","time":75.810199262,"data":"  Accuracy: 99.00%\n"}
+,{"stream_name":"stdout","time":75.810203434,"data":"  Prediction Distribution: [12 13  8 10  8 10 12 13  7  7]\n"}
+,{"stream_name":"stdout","time":75.810208333,"data":"\n"}
+,{"stream_name":"stdout","time":75.810212816,"data":"Scale Factor: 2.0\n"}
+,{"stream_name":"stdout","time":75.810234808,"data":"  Accuracy: 99.00%\n"}
+,{"stream_name":"stdout","time":75.810240065,"data":"  Prediction Distribution: [12 13  8 10  8 10 12 13  7  7]\n"}
+,{"stream_name":"stdout","time":75.810244926,"data":"\n"}
+,{"stream_name":"stdout","time":75.810249817,"data":"Scale Factor: 5.0\n"}
+,{"stream_name":"stdout","time":75.810254806,"data":"  Accuracy: 99.00%\n"}
+,{"stream_name":"stdout","time":75.810259236,"data":"  Prediction Distribution: [12 13  8 10  8 10 12 13  7  7]\n"}
+,{"stream_name":"stdout","time":75.810263992,"data":"\n"}
+,{"stream_name":"stdout","time":75.810268257,"data":"=== Intervention Experiment on Feature 442 ===\n"}
+,{"stream_name":"stdout","time":75.810272844,"data":"\n"}
+,{"stream_name":"stdout","time":75.810277113,"data":"Scale Factor: 0.0\n"}
+,{"stream_name":"stdout","time":75.810281506,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.81028591,"data":"  Prediction Distribution: [ 8  8 10  8  8 14 13 11  9 11]\n"}
+,{"stream_name":"stdout","time":75.810300498,"data":"\n"}
+,{"stream_name":"stdout","time":75.81030429,"data":"Scale Factor: 0.5\n"}
+,{"stream_name":"stdout","time":75.810308185,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810312109,"data":"  Prediction Distribution: [ 8  8 10  8  8 14 13 11  9 11]\n"}
+,{"stream_name":"stdout","time":75.8103155,"data":"\n"}
+,{"stream_name":"stdout","time":75.810318763,"data":"Scale Factor: 2.0\n"}
+,{"stream_name":"stdout","time":75.810322641,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810326836,"data":"  Prediction Distribution: [ 8  8 10  8  8 14 13 11  9 11]\n"}
+,{"stream_name":"stdout","time":75.81033097,"data":"\n"}
+,{"stream_name":"stdout","time":75.810335047,"data":"Scale Factor: 5.0\n"}
+,{"stream_name":"stdout","time":75.810338606,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810342459,"data":"  Prediction Distribution: [ 8  8 10  8  8 14 13 11  9 11]\n"}
+,{"stream_name":"stdout","time":75.810346536,"data":"\n"}
+,{"stream_name":"stdout","time":75.810350406,"data":"=== Intervention Experiment on Feature 225 ===\n"}
+,{"stream_name":"stdout","time":75.810353981,"data":"\n"}
+,{"stream_name":"stdout","time":75.810357125,"data":"Scale Factor: 0.0\n"}
+,{"stream_name":"stdout","time":75.810360406,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810363805,"data":"  Prediction Distribution: [ 8 11  7 11 11  6 15 10 14  7]\n"}
+,{"stream_name":"stdout","time":75.810367291,"data":"\n"}
+,{"stream_name":"stdout","time":75.810371461,"data":"Scale Factor: 0.5\n"}
+,{"stream_name":"stdout","time":75.810375185,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810379225,"data":"  Prediction Distribution: [ 8 11  7 11 11  6 15 10 14  7]\n"}
+,{"stream_name":"stdout","time":75.810382719,"data":"\n"}
+,{"stream_name":"stdout","time":75.810385917,"data":"Scale Factor: 2.0\n"}
+,{"stream_name":"stdout","time":75.810389262,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810392529,"data":"  Prediction Distribution: [ 8 11  7 11 11  6 15 10 14  7]\n"}
+,{"stream_name":"stdout","time":75.810395925,"data":"\n"}
+,{"stream_name":"stdout","time":75.810405969,"data":"Scale Factor: 5.0\n"}
+,{"stream_name":"stdout","time":75.810410429,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810414606,"data":"  Prediction Distribution: [ 8 11  7 11 11  6 15 10 14  7]\n"}
+,{"stream_name":"stdout","time":75.810418701,"data":"\n"}
+,{"stream_name":"stdout","time":75.810422274,"data":"Intervening on most shape-sensitive features:\n"}
+,{"stream_name":"stdout","time":75.810432444,"data":"\n"}
+,{"stream_name":"stdout","time":75.810436069,"data":"=== Intervention Experiment on Feature 60 ===\n"}
+,{"stream_name":"stdout","time":75.810439857,"data":"\n"}
+,{"stream_name":"stdout","time":75.810443127,"data":"Scale Factor: 0.0\n"}
+,{"stream_name":"stdout","time":75.810446687,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810450241,"data":"  Prediction Distribution: [10 15 10 12 10  9  9 13  6  6]\n"}
+,{"stream_name":"stdout","time":75.810453196,"data":"\n"}
+,{"stream_name":"stdout","time":75.810456102,"data":"Scale Factor: 0.5\n"}
+,{"stream_name":"stdout","time":75.810458949,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810462163,"data":"  Prediction Distribution: [10 15 10 12 10  9  9 13  6  6]\n"}
+,{"stream_name":"stdout","time":75.810465274,"data":"\n"}
+,{"stream_name":"stdout","time":75.810468743,"data":"Scale Factor: 2.0\n"}
+,{"stream_name":"stdout","time":75.810477849,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810482014,"data":"  Prediction Distribution: [10 15 10 12 10  9  9 13  6  6]\n"}
+,{"stream_name":"stdout","time":75.810485841,"data":"\n"}
+,{"stream_name":"stdout","time":75.810489292,"data":"Scale Factor: 5.0\n"}
+,{"stream_name":"stdout","time":75.810493251,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810497083,"data":"  Prediction Distribution: [10 15 10 12 10  9  9 13  6  6]\n"}
+,{"stream_name":"stdout","time":75.810500859,"data":"\n"}
+,{"stream_name":"stdout","time":75.810504453,"data":"=== Intervention Experiment on Feature 463 ===\n"}
+,{"stream_name":"stdout","time":75.810507804,"data":"\n"}
+,{"stream_name":"stdout","time":75.810511621,"data":"Scale Factor: 0.0\n"}
+,{"stream_name":"stdout","time":75.810515496,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810519392,"data":"  Prediction Distribution: [10 11 11 13  4 14 11  8  8 10]\n"}
+,{"stream_name":"stdout","time":75.810523425,"data":"\n"}
+,{"stream_name":"stdout","time":75.810529782,"data":"Scale Factor: 0.5\n"}
+,{"stream_name":"stdout","time":75.810533357,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810536797,"data":"  Prediction Distribution: [10 11 11 13  4 14 11  8  8 10]\n"}
+,{"stream_name":"stdout","time":75.810540289,"data":"\n"}
+,{"stream_name":"stdout","time":75.810543476,"data":"Scale Factor: 2.0\n"}
+,{"stream_name":"stdout","time":75.810546808,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810550214,"data":"  Prediction Distribution: [10 11 11 13  4 14 11  8  8 10]\n"}
+,{"stream_name":"stdout","time":75.810553613,"data":"\n"}
+,{"stream_name":"stdout","time":75.81055733,"data":"Scale Factor: 5.0\n"}
+,{"stream_name":"stdout","time":75.810561222,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810564904,"data":"  Prediction Distribution: [10 11 11 13  4 14 11  8  8 10]\n"}
+,{"stream_name":"stdout","time":75.810568917,"data":"\n"}
+,{"stream_name":"stdout","time":75.810572712,"data":"=== Intervention Experiment on Feature 467 ===\n"}
+,{"stream_name":"stdout","time":75.810576618,"data":"\n"}
+,{"stream_name":"stdout","time":75.810579824,"data":"Scale Factor: 0.0\n"}
+,{"stream_name":"stdout","time":75.810583055,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810586297,"data":"  Prediction Distribution: [ 7 10  7 18  5  8  9 15 15  6]\n"}
+,{"stream_name":"stdout","time":75.810589522,"data":"\n"}
+,{"stream_name":"stdout","time":75.810593243,"data":"Scale Factor: 0.5\n"}
+,{"stream_name":"stdout","time":75.81059704,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810600817,"data":"  Prediction Distribution: [ 7 10  7 18  5  8  9 15 15  6]\n"}
+,{"stream_name":"stdout","time":75.810604572,"data":"\n"}
+,{"stream_name":"stdout","time":75.810608197,"data":"Scale Factor: 2.0\n"}
+,{"stream_name":"stdout","time":75.810612105,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810615876,"data":"  Prediction Distribution: [ 7 10  7 18  5  8  9 15 15  6]\n"}
+,{"stream_name":"stdout","time":75.810619187,"data":"\n"}
+,{"stream_name":"stdout","time":75.810622428,"data":"Scale Factor: 5.0\n"}
+,{"stream_name":"stdout","time":75.810626129,"data":"  Accuracy: 100.00%\n"}
+,{"stream_name":"stdout","time":75.810629755,"data":"  Prediction Distribution: [ 7 10  7 18  5  8  9 15 15  6]\n"}
+,{"stream_name":"stdout","time":75.810633863,"data":"\n"}
+,{"stream_name":"stdout","time":75.810642462,"data":"SAE model saved to sae_model.pth\n"}
+,{"stream_name":"stdout","time":75.810646706,"data":"\n"}
+,{"stream_name":"stdout","time":75.810650407,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":75.810654072,"data":"Task 6 Complete!\n"}
+,{"stream_name":"stdout","time":75.810658033,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":75.810661647,"data":"\n"}
+,{"stream_name":"stdout","time":75.81066575,"data":"    Key Findings:\n"}
+,{"stream_name":"stdout","time":75.810669533,"data":"    1. The SAE decomposes FC1 activations into 512 features\n"}
+,{"stream_name":"stdout","time":75.810673397,"data":"    2. Some features are highly class-specific (likely shape detectors)\n"}
+,{"stream_name":"stdout","time":75.810677442,"data":"    3. Features with high train/test difference are likely color-sensitive\n"}
+,{"stream_name":"stdout","time":75.81068138,"data":"    4. Interventions on color-sensitive features may change predictions\n"}
+,{"stream_name":"stdout","time":75.810685082,"data":"    \n"}
+,{"stream_name":"stdout","time":75.81068876,"data":"    Explore further by:\n"}
+,{"stream_name":"stdout","time":75.810692705,"data":"    - Adjusting SAE_SPARSITY_WEIGHT for more/less sparse representations\n"}
+,{"stream_name":"stdout","time":75.810696902,"data":"    - Analyzing different layers (conv1, conv2, conv3)\n"}
+,{"stream_name":"stdout","time":75.810701105,"data":"    - Visualizing decoder weights to understand feature meanings\n"}
+,{"stream_name":"stdout","time":75.810704923,"data":"    - Manual labeling of features to categorize color vs. shape\n"}
+,{"stream_name":"stdout","time":75.81070897,"data":"    \n"}
+,{"stream_name":"stderr","time":81.344291337,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":81.344314069,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":81.534368891,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":81.534400054,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":82.217123568,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":82.217164389,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":82.253778928,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":82.545632371,"data":"[NbConvertApp] Writing 211343 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":84.927354475,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":84.927418787,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":84.954337529,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":85.839998591,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":85.840040051,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.840382146,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.840567996,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.840708342,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.840881181,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.840995359,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.84117026,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":85.84138454,"data":"[NbConvertApp] Writing 371020 bytes to __results__.html\n"}
+]
