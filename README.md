@@ -1,59 +1,42 @@
-# CV Task
+# The Lazy Artist - Computer Vision Task 
 
-My kaggle notebooks for the CV task are as follows:
+---
 
-Task 1:
+##  Core Resources
+* **Dataset:** [https://www.kaggle.com/datasets/akshatatkaggle/cmnistneo1](https://www.kaggle.com/datasets/akshatatkaggle/cmnistneo1)
+* **Models:** [https://www.kaggle.com/models/akshatatkaggle/task1app3models (used v2)](https://www.kaggle.com/models/akshatatkaggle/task1app3models)
 
-    task1_app3 - https://www.kaggle.com/code/akshatatkaggle/task1-approach3
+---
 
-    task1_app4 - https://www.kaggle.com/code/akshatatkaggle/task1-approach4
-    (Hybrid Gaussian filtering)
+## Task Notebooks
 
-    task1_app5 - https://www.kaggle.com/code/akshatatkaggle/task1-approach5
-    (3D Pooling)
+### Task 1: 
 
-    task1_app1 - https://www.kaggle.com/code/akshatatkaggle/task1-approach1
-    (same as task1_app3 but with structured iterative experimentation)
+* [Task 1 - Approach 3](https://www.kaggle.com/code/akshatatkaggle/task1-approach3): Baseline model implementation.
+* [Task 1 - Approach 4](https://www.kaggle.com/code/akshatatkaggle/task1-approach4): Hybrid Gaussian filtering.
+* [Task 1 - Approach 5](https://www.kaggle.com/code/akshatatkaggle/task1-approach5): 3D Pooling implementation.
+* [Task 1 - Approach 1](https://www.kaggle.com/code/akshatatkaggle/task1-approach1): Structured iterative experimentation.
+* [Task 1 - Approach 2](https://www.kaggle.com/code/akshatatkaggle/task1-approach2): 1x1 kernel optimization (bottleneck style).
 
-    task1_app2 - https://www.kaggle.com/code/akshatatkaggle/task1-approach2
-    (same as task1_app3 but with 1x1 kernel instead of 3x3 kernerl in conv layers)
+### Task 2: 
+* [Task 2 - Approach 1](https://www.kaggle.com/code/akshatatkaggle/task2-approach1)
+* [Task 2 - Approach 2](https://www.kaggle.com/code/akshatatkaggle/task2-approach2)
 
-Task 2:
+### Task 3:
+* [Task 3 - Approach 1](https://www.kaggle.com/code/akshatatkaggle/task3-app1)
 
-    task2_app1 - https://www.kaggle.com/code/akshatatkaggle/task2-approach1
+### Task 4: 
+Focusing on out-of-distribution robustness and invariant features.
+* [Task 4 - Approach 1 (IRM)](https://www.kaggle.com/code/akshatatkaggle/task4-app1): Invariant Risk Minimization.
+* [Task 4 - Approach 2 (REx)](https://www.kaggle.com/code/akshatatkaggle/task4-app2): Risk Extrapolation.
 
-    task2_app2 - https://www.kaggle.com/code/akshatatkaggle/task2-approach2
+### Task 5: 
+Testing model security and vulnerability.
+* [Task 5 - Approach 1 (FGSM)](https://www.kaggle.com/code/akshatatkaggle/task5-approach1): Fast Gradient Sign Method.
+* [Task 5 - Approach 2 (PGD)](https://www.kaggle.com/code/akshatatkaggle/task5-approach2): Projected Gradient Descent.
+* [Task 5 - Approach 3 (CW)](https://www.kaggle.com/code/akshatatkaggle/task5-approach3): Carlini & Wagner Attack.
 
-Task 3:
-
-    task3_app1 - https://www.kaggle.com/code/akshatatkaggle/task3-app1
-
-Task 4:
-
-    task4_app1 - https://www.kaggle.com/code/akshatatkaggle/task4-app1
-    (IRM)
-
-    task4_app2 - https://www.kaggle.com/code/akshatatkaggle/task4-app2
-    (REx)
-
-Task 5:
-
-    task5_app1 - https://www.kaggle.com/code/akshatatkaggle/task5-approach1
-    (FGSM)
-
-    task5_app2 - https://www.kaggle.com/code/akshatatkaggle/task5-approach2
-    (PGD)
-
-    task5_app3 - https://www.kaggle.com/code/akshatatkaggle/task5-approach3
-    (CW)
-
-Task 6:
-
-    task6_app1 - https://www.kaggle.com/code/akshatatkaggle/task6-app1
-
-    task6_app2 - https://www.kaggle.com/code/akshatatkaggle/task6-app2
-    (derived from task6_app1 but with structured approach and better visualisation and better methods for interpretability)
-
-dataset - https://www.kaggle.com/datasets/akshatatkaggle/cmnistneo1
-
-modelset - https://www.kaggle.com/models/akshatatkaggle/task1app3models
+### Task 6:
+Visualizing "why" the model makes specific decisions.
+* [Task 6 - Approach 1](https://www.kaggle.com/code/akshatatkaggle/task6-app1)
+* [Task 6 - Approach 2](https://www.kaggle.com/code/akshatatkaggle/task6-app2): Structured approach with better "interpretability" 
